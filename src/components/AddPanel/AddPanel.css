@@ -1,0 +1,48 @@
+#add-panel-container{
+    box-shadow: 0 5px 10px 0 #00000011;
+    background: #fff;
+    padding: 20px;
+    position: fixed;
+}
+#add-panel-container .header:hover{
+    background: #00000011;
+}
+#create-new-task > input,
+#create-new-task > textarea, 
+#create-new-task > span ,
+#create-new-task > button{
+    margin: 5px 0;
+}
+#create-new-task > input:focus{
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 20px 20px 0 20px;
+}
+#create-new-task > textarea:focus{
+    outline: none;
+    border: 1px solid #999;
+    border-radius: 0 18px 0 18px;
+}
+
+#create-new-task > h1{
+    text-align: center;
+    color: #333;
+}
+
+#create-new-task > input,
+#create-new-task > textarea{
+    border: none;
+    background: #fff!important;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    transition: border 150ms ease,
+    border-radius 350ms ease-out;
+}
+#create-new-task label{
+    margin-right: 10px;
+}
+#create-new-task #hexCode{
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}

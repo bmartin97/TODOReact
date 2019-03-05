@@ -1,0 +1,74 @@
+#root{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  #eee;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.task-container{
+    width: 300px;
+    max-width: 80%;
+}
+.task{
+    position: fixed;
+    width: 300px;
+    box-shadow: 0 5px 10px 0 #00000011;
+    background: #fff;
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 20px;
+    animation: taskPopUp 200ms ease 1;
+}
+@keyframes taskPopUp{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.task p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+.task label{
+    font-weight: 600;
+    text-decoration: underline;
+}
+.header{
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    border: 2px dashed #bbb;
+    cursor: grab;
+    transition: background-color 50ms ease;
+}
+.task .header{
+    padding: 5px 0;
+    border: none;
+}
+button{
+    padding: 10px;
+    background: #444;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 50ms ease;
+}
+button:hover{
+    background: #666;
+    transition: background-color 50ms ease;
+}
+button:active{
+    background: #4444ff77;
+    transition: background-color 200ms ease;
+}
